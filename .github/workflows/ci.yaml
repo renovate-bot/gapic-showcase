@@ -190,7 +190,7 @@ jobs:
       run: |
         tar xvzf regen.tgz
         rm regen.tgz
-    - uses: googleapis/code-suggester@v4
+    - uses: googleapis/code-suggester@v5
       env:
         ACCESS_TOKEN: ${{ secrets.YOSHI_CODE_BOT_TOKEN }}
       with:
@@ -218,7 +218,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-    - uses: bazel-contrib/setup-bazel@0.13.0
+    - uses: bazel-contrib/setup-bazel@0.14.0
       with:
         # Avoid downloading Bazel every time.
         bazelisk-cache: true
