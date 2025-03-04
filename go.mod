@@ -1,27 +1,27 @@
 module github.com/googleapis/gapic-showcase
 
 require (
-	cloud.google.com/go/iam v1.3.1
+	cloud.google.com/go/iam v1.4.0
 	cloud.google.com/go/longrunning v0.6.4
 	github.com/ghodss/yaml v1.0.0
 	github.com/golang/protobuf v1.5.4
-	github.com/google/go-cmp v0.6.0
+	github.com/google/go-cmp v0.7.0
 	github.com/google/uuid v1.6.0
 	github.com/googleapis/gax-go/v2 v2.14.1
 	github.com/googleapis/grpc-fallback-go v0.1.4
 	github.com/gorilla/mux v1.8.1
 	github.com/iancoleman/strcase v0.3.0
 	github.com/soheilhy/cmux v0.1.5
-	github.com/spf13/cobra v1.8.1
+	github.com/spf13/cobra v1.9.1
 	github.com/spf13/viper v1.19.0
-	golang.org/x/oauth2 v0.25.0
-	golang.org/x/sync v0.10.0
-	google.golang.org/api v0.218.0
-	google.golang.org/genproto v0.0.0-20250124145028-65684f501c47
-	google.golang.org/genproto/googleapis/api v0.0.0-20250124145028-65684f501c47
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20250124145028-65684f501c47
+	golang.org/x/oauth2 v0.27.0
+	golang.org/x/sync v0.11.0
+	google.golang.org/api v0.223.0
+	google.golang.org/genproto a0af3efb3deb
+	google.golang.org/genproto/googleapis/api a0af3efb3deb
+	google.golang.org/genproto/googleapis/rpc a0af3efb3deb
 	google.golang.org/grpc v1.69.4
-	google.golang.org/protobuf v1.36.4
+	google.golang.org/protobuf v1.36.5
 )
 
 require (
@@ -67,4 +67,4 @@ require (
 
 go 1.22
 
-toolchain go1.23.5
+toolchain go1.24.1
