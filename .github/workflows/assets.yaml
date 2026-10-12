@@ -42,9 +42,9 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/setup-go@v6
+      - uses: actions/setup-go@v7
         with:
-          go-version: '1.26'
+          go-version: '1.27'
       - uses: actions/checkout@v7
       - name: Init submodule
         run: git submodule init && git submodule update
@@ -97,9 +97,9 @@ jobs:
           else
           echo "GITHUB_UPLOAD_URL=$MANUAL_UPLOAD_URL" >> "$GITHUB_OUTPUT"
           fi
-      - uses: actions/setup-go@v6
+      - uses: actions/setup-go@v7
         with:
-          go-version: '1.26'
+          go-version: '1.27'
       - name: Install gox
         run: go install github.com/mitchellh/gox@latest
       - uses: actions/checkout@v7
